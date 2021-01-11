@@ -1,0 +1,41 @@
+{
+    "name": "prinx/laravel-datatable",
+    "description": "Simple yet powerful datatable controller for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Prince Dorcis",
+            "email": "princedorcis@gmail.com"
+        }
+    ],
+    "config": {
+        "optmize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prinx\\Laravel\\Datatable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Prinx\\Laravel\\Datatable\\Tests\\": "tests/"
+        } 
+    },
+    "extra": {
+        "laravel": {
+            "providers" : [
+                "Prinx\\Laravel\\Datatable\\ServiceProvider"
+            ],
+            "aliases": {
+                "Datatable": "Prinx\\Laravel\\Datatable\\Facades\\Datatable"
+            }
+        }
+    }
+}
